@@ -30,4 +30,3 @@ data2 = {
 response2 = requests.post('https://www.cutecloud.net/user/buy', headers=headers2, data=data2)
 json =  response2.json()
 print(json)
-input()
