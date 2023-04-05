@@ -26,5 +26,6 @@ jobs:
       - name: aliyunpan_brush
         env:
             ali_refresh_token: ${{ secrets.ALI_REFRESH_TOKEN }}
+            PUSH_KEY: ${{ secrets.PUSH_KEY }}
         run: |
           python3 aliyunpan_sign.py
