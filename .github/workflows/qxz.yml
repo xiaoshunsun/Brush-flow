@@ -27,5 +27,5 @@ jobs:
       - name: qxz #运行名称
         env:    #获取环境变量设置名称
             xqzck: ${{ secrets.XQZCK }}
-        run: |  #运行脚本
-          node qxz.js #脚本存在根目录的qxz.js不在根目录要用./文件夹名/.js 
+        run: |  #运行脚本 #脚本存在根目录的qxz.js不在根目录要用./文件夹名/.js
+          node qxz.js  
