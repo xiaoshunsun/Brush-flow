@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "got": "^9.6.0",
+    "tough-cookie": "^4.1.2"
+  }
+}
