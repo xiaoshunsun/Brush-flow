@@ -24,9 +24,9 @@ jobs:
           npm install
           npm install got
           npm install tough-cookie
-      - name: wx_jdyd #运行名称
+      - name: wxjdyd #运行名称
         env:    #获取环境变量设置名称
             jdyuedu: ${{ secrets.JDYUEDU }},
             ydua: ${{ secrets.YDUA }}
         run: |  #运行脚本 #脚本存在根目录的qxz.js不在根目录要用./文件夹名/.js
-          node wx_jdyd.js  
+          node wxjdyd.js 
