@@ -29,6 +29,7 @@ var msg = ''
 var jiance = 0 //1获取文章 ， 0阅读
 let newurl = "https://ghin.zgisorz.xyz:10261"
 ///////////////////////////////////////////////////////////////////
+console.log('在运行')
 if (!ua) {
     console.log('请抓包User-Agent并填入变量 ydua 后再运行')
     return
