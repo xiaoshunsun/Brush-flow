@@ -37,7 +37,6 @@ if (!ua) {
 }
 
 class UserInfo {
-    console.log('在运行4')
     constructor(str) {
         console.log('在运行5')
         //console.log(str)
