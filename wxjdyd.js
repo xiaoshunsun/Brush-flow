@@ -14,14 +14,15 @@
 3.12更新：前2篇以及101和102篇文章改为检测文章，遇到不读，请手动阅读
 
 */
-
+console.log('在运行')
 const $ = new Env("微信简单阅读");
 const notify = '';
 let envSplitor = ['@', '\n']
 let httpResult, httpReq, httpResp
 let ckName = 'jdyuedu'
-let userCookie = ($.isNode() ? process.env[ckName] : $.getdata(ckName)) || '';
-let ua = process.env['ydua']  || ''
+let userCookie = 'non72067912a213298a5e897ab58747192b&eyJpdiI6ImZBZCtxVXJxVVVHc2llZ2wwSzZIUGc9PSIsInZhbHVlIjoiYnJhcFlGMmNGdHJZZDlMMVZMbjNibnhlNzM2OXhjc1hxb284XC9UZldvSys1eWJBRFg0QlNPYVk2YXFSOXczNXFHXC9GN0d2ODhuUTF3XC96S3d6T2hlOUNoUE0xNW1cL3Q0QTkxTDdnUlhNcXFQbUMyNFk5MGlQcTZmc0pyVGRodkw2d21LRVl1MXpteDNSaUE4MkRxdFBvb3crbTUzb0k0Y0w3TnNLUWF3ajlLVnhLdHZHQ0YwM3FWRXBuYVhZb3BcL1JUME9xdkpzbVRVa1l2UFhEXC9GRHFoaG1Wcis3cjVxQzlxSG5PYVJFR1BaU042OU9zU3I0TFh4czNWdVo5MVFLTHVkZ2FLNnFSVTJ1VUFRT0c4WElPcTZXd0RUamNcLzRMMWNtd2pQdkdjZkxPOVF5TlJLaGpcL2F3QmRTbDRDMFNaeWd5ZXlEQjVRUVJOaUFWZ2N0aGpLMXR6MHlOYmpxYlwvXC8rZERNY1k0ZHRFbmVYWVNPRW1hbitrWHlLb2pyaVJZMGhIUVhYaFoxR2xCZXQ4WmlYbWhBb3ppMExxaEJGWFpJRjIyK0Y4ZVp5RnpYVXhoRGJ5d2U2VFlBMW1VN0hDUzhPYlpTMitZQUJCUmkyMmlvOTdFeHhqWTNcL2llNG8zWTEzYVIzRkxLVjZKRnVVd1ZXQ0NOc2dDbjN3eEEzNHh4NnV4aGZsbFVXTTBwczRzSTJmZXdKK2twMFVDXC9wY1VrcjBRdlNXUFZQaVwvRT0iLCJtYWMiOiJmZDUwMTYxMWMxODU3NzA1YTJkNzc5NzI5YmFkM2MxZGYwZjQyNGU4ZmQ4ODgwMDllYTRlMGE5NjE3NTA4ODcwIn0%3D';
+let ua = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 NetType/WIFI MicroMessenger/7.0.20.1781(0x6700143B) WindowsWechat(0x6309001c) XWEB/6762'
+
 let userList = []
 let userIdx = 0
 let userCount = 0
@@ -29,7 +30,7 @@ var msg = ''
 var jiance = 0 //1获取文章 ， 0阅读
 let newurl = "https://ghin.zgisorz.xyz:10261"
 ///////////////////////////////////////////////////////////////////
-console.log('在运行')
+
 if (!ua) {
     console.log('请抓包User-Agent并填入变量 ydua 后再运行')
     return
