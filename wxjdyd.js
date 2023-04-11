@@ -16,7 +16,7 @@
 */
 
 const $ = new Env("微信简单阅读");
-const notify = $.isNode() ? require('./sendNotify') : '';
+const notify = '';
 let envSplitor = ['@', '\n']
 let httpResult, httpReq, httpResp
 let ckName = 'jdyuedu'
