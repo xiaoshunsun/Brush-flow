@@ -14,7 +14,7 @@
 3.12更新：前2篇以及101和102篇文章改为检测文章，遇到不读，请手动阅读
 
 */
-console.log('开始222')
+
 const $ = new Env("微信简单阅读");
 const notify = '';
 console.log('开始1')
@@ -437,16 +437,19 @@ async function httpRequest(method, url) {
 
 ////////////////////////////////////////////////////////////////////
 function Env(a, b) {
+    console.log('开始000')
     return "undefined" != typeof process && JSON.stringify(process.env).indexOf("GITHUB") > -1 && process.exit(0), new class {
         constructor(a, b) {
             this.name = a, this.notifyStr = "", this.startTime = (new Date).getTime(), Object.assign(this, b), console.log(`${this.name} 开始运行：
 `)
         }
 
+        console.log('开始111')
         isNode() {
             return "undefined" != typeof module && !!module.exports
         }
 
+        console.log('开始222')
         isQuanX() {
             return "undefined" != typeof $task
         }
