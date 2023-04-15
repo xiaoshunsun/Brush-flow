@@ -28,6 +28,7 @@ let userCount = 0
 var msg = ''
 var jiance = 0 //1获取文章 ， 0阅读
 let newurl = "https://ghin.zgisorz.xyz:10261"
+console.log('开始')
 ///////////////////////////////////////////////////////////////////
 if (!ua) {
     console.log('请抓包User-Agent并填入变量 ydua 后再运行')
