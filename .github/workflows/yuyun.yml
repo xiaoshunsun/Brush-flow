@@ -24,7 +24,6 @@ jobs:
           python -m pip install requests
           python -m pip install Path
           python -m pip install logging
-          python -m pip install json
       - name: 运行签到
         run: |
           python3 雨云免费白嫖服务器.py
